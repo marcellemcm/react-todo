@@ -1,33 +1,38 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import { FaRegTrashAlt } from 'react-icons/fa';
-import { Container } from './styles';
+import { Container, ContainerTask, Button } from './styles';
 
-export default function TaskItem({ task, onDelete, done, index }) {
+export default function TaskItem({ task, onDelete, done }) {
   return (
-    <Container>
-      <label>
-        <input
-          type="checkbox"
-          name={task.tilte}
-          value={task.title}
-          onChange={done}
-          checked={task.done ? 'checked' : ''}
-        />
-        <p className={task.done ? 'doneTask' : 'active'}>{task.title}</p>
-      </label>
-      <button type="button" onClick={onDelete}>
-        <FaRegTrashAlt size={14} />
-      </button>
-    </Container>
+    <>
+      <Container>
+        <ContainerTask>
+          <input
+            type="checkbox"
+            name={task.title}
+            value={task.title}
+            onChange={done}
+            checked={task.done ? 'checked' : undefined }
+
+          />
+          <label>
+            <p className={task.done && 'doneTask'}>{task.title}</p>
+          </label>
+        </ContainerTask>
+        <Button type="button" onClick={onDelete}>
+          <FaRegTrashAlt color="gray" size={14} />
+        </Button>
+      </Container>
+    </>
   );
 }
 
-// TaskItem.defaultProps = {
-//   task: 'Oculto',
-// };
+// // TaskItem.defaultProps = {
+// //   task: 'Oculto',
+// // };
 
-// TaskItem.propTypes = {
-//   task: PropTypes.string,
-//   onDelete: PropTypes.func.isRequired,
-// };
+// // TaskItem.propTypes = {
+// //   task: PropTypes.string,
+// //   onDelete: PropTypes.func.isRequired,
+// // };

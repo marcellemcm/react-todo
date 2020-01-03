@@ -1,5 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
+import 'react-toastify/dist/ReactToastify.css'
+
 const GlobalStyle = createGlobalStyle`
 
 * {
@@ -14,13 +16,20 @@ body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Open Sans, Arial, Helvetica, sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color:#f2f2f2;
+  background-color: #d7dfe5;
+  font-size: 16px;
+}
 
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
 
 
