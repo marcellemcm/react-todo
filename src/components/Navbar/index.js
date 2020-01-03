@@ -14,7 +14,7 @@ export default function Navbar() {
           </i>
           <p>Adicionar tarefa</p>
         </NavLink>
-        <NavLink to="/tasks" activeClassName="selected" exact>
+        <NavLink to="/tarefas" activeClassName="selected" exact>
           <i>
             <FaTasks />
           </i>

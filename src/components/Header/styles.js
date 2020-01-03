@@ -18,7 +18,7 @@ export const Container = styled.div`
     height: 100%;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 768px) {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 100%;
 

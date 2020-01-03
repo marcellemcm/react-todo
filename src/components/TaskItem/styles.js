@@ -73,7 +73,7 @@ export const ContainerTask = styled.div`
     p {
       margin-left: 25px;
 
-      @media (max-width: 720px) {
+      @media (max-width: 768px) {
         margin-left: 15px;
       }
 
@@ -92,7 +92,7 @@ export const Button = styled.button`
   border: none;
   background: transparent;
 
-  @media (max-width: 720px) {
+  @media (max-width: 768px) {
     margin-left: 5px;
     margin-right: 5px;
   }

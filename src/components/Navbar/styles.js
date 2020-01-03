@@ -33,7 +33,7 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 768px) {
     a {
     display: flex;
     justify-content: center;
