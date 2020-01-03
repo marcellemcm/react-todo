@@ -21,7 +21,7 @@ export default function Routes({ component: Component, ...rest }) {
             )}
           />
           <Route
-            path="/tasks"
+            path="/tarefas"
             render={props => (
               <Layout>
                 <TasksAll {...props} />

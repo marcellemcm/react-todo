@@ -40,7 +40,7 @@ export const ContainerImg = styled.div`
     width: 50vw;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 768px) {
     img {
       margin-left: 20px;
       width: 52vw;
