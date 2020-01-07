@@ -31,11 +31,11 @@
 
 - Dentro da pasta do projeto, instalar as dependências
 ```
-npm install ou yarn install
+npm install ou yarn
 ```
 - Rodar o projeto no servidor local
 ```
-npm start ou yarn
+npm start ou yarn start
 ```
 - Acesse http://localhost:3000
 
